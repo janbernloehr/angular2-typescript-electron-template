@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+:root {
+  --color:          hsl(0,0%,22%);
+  --color-subtle:   hsl(0,0%,44%);
+  --color-strong:   hsl(0,0%,11%);
+  --color-link:     hsl(0,0%,22%);
+
+  --color-border:   hsl(0,0%,88%);
+  --color-bg:       hsl(0,0%,96%);
+
+  --color-accent:   black; /* Fallback */
+}
+
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.starter-template {
+    margin-top: 10px;
+}
+
+table {font-size: 14px;}
+
+.container {margin:0; padding: 0 15px;}
+
+.side-nav { 
+    background-color: rgb(245, 245, 245); 
+    padding: 15px;
+    height: 100%; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: solid 1px var(--color-border);
+}
+
+.main-content {
+    position: relative;
+    height: 100%; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.app-header {
+    color: rgb(112, 112, 112);
+    font-weight: 300;
+    margin: -15px -15px 0 -15px;
+    padding: 15px;
+    font-size: 21px;
+    border-bottom: solid 1px var(--color-border);
+}
+
+.app-nav-head {
+    color: rgb(112, 112, 112);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 15px 0 5px 0;
+}
+
+.m-t-3 {
+    margin-top: 15px;
+}
+
+.m-b-1 {
+    margin-bottom: 5px;
+}
+
+.download-success {
+    color: green;
+}
+
+.download-failed {
+    color: darkred;
+}
+
+.download-pending {
+    color: darkblue;
+}
+
+.close-add {
+    font-size: 12px;
+}

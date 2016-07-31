@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 side-nav">
+            <div class="app-header">
+                my app
+            </div>
+
+            <div class="app-nav-head">
+                Stuff
+            </div>
+
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation">
+                    Some things
+                </li>
+                <li role="presentation">
+                    More things
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-10 main-content">
+            <h1>Hello World</h1>
+
+            <div *ngIf="!working">
+                <button (click)="StartWorking()" class="btn btn-primary">Do Something</button>
+            </div>
+
+            <div *ngIf="working">
+                <img src="assets/loading.svg"> working...
+            </div>
+        </div>
+    </div>
+</div>
