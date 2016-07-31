@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* Providing a template for using angular2 and typescript with electron.
+* Providing a template for using [angular2](https://angular.io) and [typescript](http://www.typescriptlang.org) with [electron](http://electron.atom.io).
 
 
 * built with :heart: and [Visual Studio Code](https://code.visualstudio.com)
@@ -20,4 +20,4 @@
 
 for continuous rebuilding type
 
-* `npm watch`
+* `npm run watch`
