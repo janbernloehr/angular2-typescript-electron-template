@@ -1,5 +1,4 @@
-import { Component, Pipe, PipeTransform } from '@angular/core';
-import {Http, HTTP_PROVIDERS, Headers, RequestOptions} from '@angular/http';
+import { Component } from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 
 @Component({
