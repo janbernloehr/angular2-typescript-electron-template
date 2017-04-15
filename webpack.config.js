@@ -4,7 +4,6 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 
 module.exports = {
   devtool: 'source-map',
-  debug: true,
   
   externals : {
     'child_process' : 'childProcess',
@@ -13,20 +12,12 @@ module.exports = {
   },
 
   entry: {
-    // angular scripts
     'angular2': [
       'rxjs',
-      'reflect-metadata',
       '@angular/core',
       '@angular/router',
       '@angular/http'
     ],
-    // external scripts
-    'vendor': [
-      //'xregexp',
-      //'moment'
-    ],
-    // app scripts
     'app': './app/app'
   },
 
@@ -39,14 +30,14 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['','.ts','.js','.json', '.css', '.html']
+    extensions: ['.ts','.js','.json', '.css', '.html']
   },
 
   module: {
     loaders: [
       {
         test: /\.ts$/,
-        loader: 'ts',
+        loader: 'ts-loader',
         exclude: [ /node_modules/ ]
       }
     ]
@@ -54,6 +45,9 @@ module.exports = {
 
   plugins: [
     new CommonsChunkPlugin({ name: 'angular2', filename: 'angular2.js', minChunks: Infinity }),
-    new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' })
+    new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' }),
+   new webpack.LoaderOptionsPlugin({
+     debug: true
+   })
   ]
 };

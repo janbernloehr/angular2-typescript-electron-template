@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* Providing a template for using [angular2](https://angular.io) and [typescript](http://www.typescriptlang.org) with [electron](http://electron.atom.io).
+* Providing a template for using [angular](https://angular.io) and [typescript](http://www.typescriptlang.org) with [electron](http://electron.atom.io).
 
 
 * built with :heart: and [Visual Studio Code](https://code.visualstudio.com)
