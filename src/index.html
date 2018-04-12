@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularTypescriptElectronTemplate</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script>
+    const child = require('child_process');
+    const fs = require('fs');
+    const path = require('path');
+    const electron = require('electron');
+  </script>
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+<script>
+  // Open all links in external browser
+  const shell = electron.shell;
+  document.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A' && event.target.href.startsWith('http')) {
+      event.preventDefault()
+      shell.openExternal(event.target.href)
+    }
+  })
+</script>
+
+</html>
